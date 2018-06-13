@@ -1,7 +1,7 @@
 {
   "name": "percentive.ui",
   "version": "1.0.0",
-  "description": "Setup for a css using express.",
+  "description": "Setup CSS, HTML and JS development environment.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
