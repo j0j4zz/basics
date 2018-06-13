@@ -1,3 +1,5 @@
+'use strict';
+
 const gulp          = require('gulp');
 const minifyCSS     = require('gulp-minify-css');
 const concatCSS     = require('gulp-concat-css');
