@@ -4,9 +4,10 @@
 .col-5, .col-6,
 .col-7, .col-8,
 .col-9, .col-10,
-.col-11, .col-12 {
-    padding: 5px 10px;      /* Left Right and Bottom Top */
+.col-11, .col-12. .col {
     height: 100%;
+    max-width: inherit;
+    margin: 5px;
 }
 
 /* Grid column width */
@@ -23,4 +24,24 @@
 .col-11 {   width: 91.67%;  }
 .col-12 {   width: 100.0%;  }
 
-/* Ending */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.row > .col-1, .row > .col-2,
+.row > .col-3, .row > .col-4,
+.row > .col-5, .row > .col-6,
+.row > .col-7, .row > .col-8,
+.row > .col-9, .row > .col-10,
+.row > .col-11, .row > .col-12,
+.row > .col {
+    display: inline-block;
+}
+
+.row-wrap {flex-wrap: wrap}
+.justify-center {justify-content: center;}
+.justify-left {justify-content: flex-start;}
+.justify-right {justify-content: flex-end;}
+.justify-even {justify-content: space-evenly;}

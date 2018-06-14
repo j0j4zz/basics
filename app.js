@@ -17,7 +17,11 @@ app.set('port',port);
 app.set(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : false}));
-app.use(express.static(path.join(__dirname, 'dist')));	
+app.use(express.static(path.join(__dirname, 'dist'), {extensions : ['html','htm']}));	
+
+app.use('/', express.static('dist/html'));
+app.use('/dist', express.static(path.join(__dirname, 'dist')));
+
 app.listen(app.get('port'));
 
 module.exports = app;

@@ -29,21 +29,21 @@ gulp.task('build:js', () => {
 
 // This is the process to 
 gulp.task('build:font', () => {
-    return  gulp.src(['build/font/*'])
+    return  gulp.src(['build/font/*.*'])
         .pipe(gulp.dest('dist/font'))
         .pipe(reload({stream:true}));
 });
 
 // This is the process to 
 gulp.task('build:img', () => {
-    return  gulp.src(['build/img/*'])
+    return  gulp.src(['build/img/*.*'])
         .pipe(gulp.dest('dist/img'))
         .pipe(reload({stream:true}));
 });
 
 // This is the process to 
 gulp.task('build:html', () => {
-    return  gulp.src(['build/html/*'])
+    return  gulp.src(['build/html/*.html'])
 	    .pipe(inject(gulp.src(['dist/**/*.min.css'], {read: false}), {starttag: '<!-- inject:dist:css -->'}))
 	    .pipe(inject(gulp.src(['dist/**/*.js'], {read: false}), {starttag: '<!-- inject:dist:js -->'}))
         .pipe(gulp.dest('dist/html'))
@@ -86,6 +86,7 @@ gulp.task('watch', () => {
     .on('change',function(event){
         notify('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
+
 })
 
 // Browser Sync
