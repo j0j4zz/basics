@@ -1,0 +1,13 @@
+/* Form input text */
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='file'],
+select{
+    display: block;
+    padding : 5px;
+    margin: 5px;
+    background : #dddddd;
+    border: 1px solid #444444;
+    box-sizing: border-box;
+}

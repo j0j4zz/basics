@@ -1,0 +1,19 @@
+/* Table setup */
+
+table, th, tr, td {
+    border-bottom: 1px solid #aaaaaa; 
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 2px;
+    text-align: left;
+}
+
+th {    border-bottom: 1px solid #000000; border-collapse: collapse;}
+td, th {
+    padding: 10px;
+}
+
+tr {
+    padding: 0px 10px;
+    margin: 0px 10px;   
+}
